@@ -1,3 +1,25 @@
+:root {
+  --bg: white;
+  --accent: #c0ffe4;
+  --text: black;
+  --text-accent: #305747;
+  --fg-accent: #77ffcd;
+  --fg-accent-hv: #77ffcd57;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1e1e1e;
+    --accent: #423360;
+    --text: white;
+    --text-accent: #b39be4;
+    --fg-accent: #8562ca;
+    --fg-accent-hv: #8562ca57;
+  }
+}
+
 body {
   margin: 0px;
+  background-color: var(--bg);
+  color: var(--text);
 }

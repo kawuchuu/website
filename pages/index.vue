@@ -19,9 +19,7 @@
           </h3>
         </div>
         <div class="scroller">
-          <div class="scroller-container">
-            <IndexScroller v-for="item in softwareItems" :project="item" :key="item.title" />
-          </div>
+          <IndexScroller v-for="item in softwareItems" :project="item" :key="item.title" />
         </div>
       </div>
       <div class="section-text">
@@ -46,19 +44,25 @@ export default {
       softwareItems: [
         {
           title: 'Firetail',
-          desc: 'An open source music player'
+          desc: 'An open source music player',
+          tags: ['Node.js', 'Vue']
         },
         {
           title: 'Lorikeet',
-          desc: 'An all-purpose self-hosted Discord bot'
+          desc: 'An all-purpose self-hosted Discord bot',
+          tags: ['Node.js', 'Vue']
         },
         {
           title: 'Wattle',
-          desc: 'A utility to remind you to stretch'
+          desc: 'A utility to remind you to stretch',
+          tags: ['Swift', 'SwiftUI'],
+          private: true
         },
         {
           title: 'Rosella',
-          desc: 'An easy-to-use YouTube downloader'
+          desc: 'An easy-to-use YouTube downloader',
+          tags: ['Node.js', 'Vue'],
+          private: true
         }
       ]
     }
@@ -81,7 +85,7 @@ section.top {
   width: 100%;
   height: 460px;
   //background-color: #24ffad;
-  background-color: #c0ffe4;
+  background-color: var(--accent);
   overflow: hidden;
 
   .top-text {
@@ -100,7 +104,7 @@ section.top {
     h2 {
       font-size: 2rem;
       margin-bottom: 0px;
-      color: #305747;
+      color: var(--text-accent);
     }
   }
 
@@ -134,7 +138,7 @@ section.sub-info {
   .box-thing {
     width: 0%;
     height: 15px;
-    background-color: #77ffcd;
+    background-color: var(--fg-accent);
     position: relative;
     bottom: 18px;
     z-index: -1;
@@ -152,7 +156,7 @@ section.sub-info {
     margin-top: 0px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    opacity: 0.7;
+    color: var(--text-accent);
   }
 
   h3 {
@@ -184,20 +188,21 @@ section.sub-info {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 10px;
-    overflow: hidden;
-    overflow-x: auto;
     width: 100%;
-
-    .scroller-container {
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
-    }
   }
 
   .section-text:not(:last-child) {
     //border-bottom: solid 1px black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  section.top {
+    .circle-bg {
+      background-image: url('../assets/circle-bg-dark.svg');
+    }
   }
 }
 </style>

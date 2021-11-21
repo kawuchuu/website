@@ -43,6 +43,8 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-leaflet',
+    '@nuxtjs/svg'
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -57,6 +59,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    splitChunks: {
+      layouts: true
+    }
   },
 
   server: {
