@@ -1,5 +1,6 @@
 <template>
   <div class="web-content">
+    <InDevNotice />
     <Nuxt />
   </div>
 </template>

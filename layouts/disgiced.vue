@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <InDevNotice />
     <DisgicedTopBar/>
     <Nuxt class="router-top"/>
     <DisgicedFooter/>
