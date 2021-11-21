@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="bg-thing-wrap">
-          <div class="bg-thing" style="background-image: url('imgs/flinders-front.jpg')" />
+          <div class="bg-thing" style="background-image: url('/mwf/flinders-front.jpg')" />
         </div>
       </div>
     </section>
@@ -79,7 +79,7 @@
           </div>
         </div>
         <div class="bg-thing-wrap">
-          <div class="bg-thing" style="background-image: url('imgs/laneway.jpg')" />
+          <div class="bg-thing" style="background-image: url('/mwf/laneway.jpg')" />
         </div>
       </div>
     </section>
@@ -117,10 +117,10 @@ export default {
   data () {
     return {
       imgs: [
-        'imgs/hosier-lane-front.jpg',
-        'imgs/colour.jpg',
-        'imgs/arcade.jpg',
-        'imgs/musicbowl.jpg'
+        '/mwf/hosier-lane-front.jpg',
+        '/mwf/colour.jpg',
+        '/mwf/arcade.jpg',
+        '/mwf/musicbowl.jpg'
       ],
       curImg: 0,
       events: [
@@ -128,7 +128,7 @@ export default {
           title: 'Photography Workshop',
           time: '09:00',
           location: 'Royal Botanic Gardens',
-          img: 'imgs/bgardens.jpg',
+          img: '/mwf/bgardens.jpg',
           note: {
             tag: 'City of Melbourne',
             url: 'https://whatson.melbourne.vic.gov.au/things-to-do/royal-botanic-gardens-victoria'
@@ -139,7 +139,7 @@ export default {
           title: 'Australian Animals',
           time: '12:00',
           location: 'Melbourne Zoo',
-          img: 'imgs/melbzookoala.jpg',
+          img: '/mwf/melbzookoala.jpg',
           note: {
             tag: 'City of Melbourne',
             url: 'https://whatson.melbourne.vic.gov.au/things-to-do/melbourne-zoo'
@@ -150,7 +150,7 @@ export default {
           title: 'History of Melbourne',
           time: '13:30',
           location: 'National Gallery of Victoria',
-          img: 'imgs/ngv.jpg',
+          img: '/mwf/ngv.jpg',
           note: {
             tag: 'Visit Victoria',
             url: 'https://www.visitmelbourne.com/regions/Melbourne/Things-to-do/Art-theatre-and-culture/Art-galleries/NGV-International'
@@ -161,7 +161,7 @@ export default {
           title: 'Free MCG Tour',
           time: '14:45',
           location: 'Melbourne Cricket Ground',
-          img: 'imgs/mcg.jpg',
+          img: '/mwf/mcg.jpg',
           note: {
             tag: 'Melbourne Cricket Ground',
             url: 'https://mcg.org.au/about-us/about-the-mcg'
@@ -172,7 +172,7 @@ export default {
           title: 'Twilight Market',
           time: '16:30',
           location: 'Queen Victoria Market',
-          img: 'imgs/qvm.jpg',
+          img: '/mwf/qvm.jpg',
           note: {
             tag: 'Visit Victoria',
             url: 'https://www.visitvictoria.com/regions/Melbourne/Things-to-do/Shopping/Markets/Queen-Victoria-Market'
@@ -183,7 +183,7 @@ export default {
           title: 'MWF Live Performance',
           time: '20:00',
           location: 'Sidney Myer Music Bowl',
-          img: 'imgs/musicbowl.jpg',
+          img: '/mwf/musicbowl.jpg',
           note: {
             none: true
           },
