@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{293:function(e,t,n){"use strict";n.r(t),t.default={init:function(e){var t=e.audioCtx.createBiquadFilter();return t.type="highshelf",t.frequency.value=2e3,t},rangeUpdate:function(e,t){e.effectsStore.treble.gain.value=t.target.value}}}}]);
