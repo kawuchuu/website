@@ -10,12 +10,12 @@
 export default {
   data() {
     return {
-      closedNotice: localStorage.getItem('closedNotice')
+      closedNotice: sessionStorage.getItem('closedNotice')
     }
   },
   methods: {
     hideNotice() {
-      window.localStorage.setItem('closedNotice', true)
+      window.sessionStorage.setItem('closedNotice', true)
       this.closedNotice = true
     }
   }
